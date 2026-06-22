@@ -1,0 +1,42 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+venv/
+.venv/
+.idea/
+.vscode/
+
+# Native build artifacts
+*.so
+pcdet/version.py
+
+# Datasets, model weights, experiment outputs
+checkpoints/
+data/
+output/
+provide/
+visualization_outputs/
+cvae_uncertainty/logs/
+cvae_uncertainty/output/
+cvae_uncertainty/cfgs/*_gen.yaml
+cvae_uncertainty/cfgs/_gen.yaml
+cvae_uncertainty/kitti
+cvae_uncertainty/kitti/
+uncertain_influence/results/
+uncertain_influence/results_current_result/
+tools/vis_uncertainty_trend_mock/
+spconv/
+
+# Large/generated file types
+*.pth
+*.pkl
+*.bin
+*.zip
+*.log
+
+# Scratch notes
+temp.txt
+test.txt
