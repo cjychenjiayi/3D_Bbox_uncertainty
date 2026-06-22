@@ -349,12 +349,20 @@ placement:
 checkpoints/gaussian/GLENet_VR_gaussian_epoch80.pth
 ```
 
-After publishing the checkpoint, use a release URL or model-hosting URL in this
-form:
+The current Gaussian KITTI checkpoint is published as a GitHub Release asset:
+
+```text
+Release tag: bbox_uncertain_checkpoint
+Asset: checkpoint_epoch_80.pth
+URL: https://github.com/cjychenjiayi/3D_Bbox_uncertainty/releases/download/bbox_uncertain_checkpoint/checkpoint_epoch_80.pth
+```
+
+Download it with:
 
 ```bash
 mkdir -p checkpoints/gaussian
-wget -O checkpoints/gaussian/GLENet_VR_gaussian_epoch80.pth <your_gaussian_weight_url>
+wget -O checkpoints/gaussian/GLENet_VR_gaussian_epoch80.pth \
+  https://github.com/cjychenjiayi/3D_Bbox_uncertainty/releases/download/bbox_uncertain_checkpoint/checkpoint_epoch_80.pth
 ```
 
 Then evaluate with:
